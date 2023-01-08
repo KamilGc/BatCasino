@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;900&display=swap');
+
+:root {
+    --clrBlack: #000;
+    --clrWhite: #fff;
+    --clrGrey1: #999;
+    --clrGrey2: #555;
+    --clrGrey3: #222;
+    --clrGreen1: #44d52c;
+    --clrGreen2: #28841a;
+    --clrGreen3: #15340d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red !important; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--clrGrey1)
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: var(--clrBlack);
+    color: var(--clrWhite);
+    font-family: 'roboto slab';
+    font-weight: 400;
+}
+
+/* OVERALL */
+
+/* HEADER + NAV */
+
+header {
+    display: flex;
+    border-bottom: 1px solid var(--clrGreen1);
+}
+
+.headerLogo {
+    margin-left: 25px;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+}
+
+nav {
+    width: 100%;
+    min-height: 75px;
+    font-weight: 500;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: center;
+    min-height: 75px;
+}
+
+.ulNav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.ulNav li {
+    /* background-color: blue; */
+}
+
+.ulNav a {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.ulNav a:hover {
+    color: var(--clrWhite);
+    text-decoration: underline 2px var(--clrGreen1);
+    text-underline-offset: 10px;
+}
+
+/* MAIN */
