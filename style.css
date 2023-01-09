@@ -45,9 +45,11 @@ img {
 
 header {
     border-bottom: 1px solid var(--clrGreen1);
-    background-color: var(--clrBlack);
-    position: fixed;
+    /* background-color: var(--clrBlack); */
+    position: sticky;
+    top: 0;
     width: 100%;
+    backdrop-filter: blur(25px);
 }
 
 .headerLogo {
@@ -110,10 +112,15 @@ nav {
     }
     .headerLogo {
         position: static;
+        margin-left: 0;
     }
 }
 
 /* MAIN */
+
+main {
+    background-color: blue;
+}
 
 .rozciagator {
     height: 200vh;
