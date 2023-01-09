@@ -23,7 +23,7 @@ a {
     color: var(--clrGrey1)
 }
 
-li {
+ul {
     list-style: none;
 }
 
@@ -34,13 +34,20 @@ body {
     font-weight: 400;
 }
 
+img {
+    width: 100%;
+    display: block;
+}
+
 /* OVERALL */
 
 /* HEADER + NAV */
 
 header {
-    display: flex;
     border-bottom: 1px solid var(--clrGreen1);
+    background-color: var(--clrBlack);
+    position: fixed;
+    width: 100%;
 }
 
 .headerLogo {
@@ -51,8 +58,6 @@ header {
 }
 
 nav {
-    width: 100%;
-    min-height: 75px;
     font-weight: 500;
 }
 
@@ -68,10 +73,6 @@ nav {
     gap: 25px;
 }
 
-/* .ulNav li {
-    background-color: blue;
-} */
-
 .ulNav a {
     padding-left: 25px;
     padding-right: 25px;
@@ -83,4 +84,37 @@ nav {
     text-underline-offset: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+    .ulNav {
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .ulNav a {
+        padding-left: 10px;        
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ulNav {
+        display: none;
+    }
+    .navContainer {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    .headerLogo {
+        position: static;
+    }
+}
+
 /* MAIN */
+
+.rozciagator {
+    height: 200vh;
+}
