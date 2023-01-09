@@ -50,6 +50,7 @@ header {
     top: 0;
     width: 100%;
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
 }
 
 .headerLogo {
