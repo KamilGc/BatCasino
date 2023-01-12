@@ -20,7 +20,8 @@
 
 a {
     text-decoration: none;
-    color: var(--clrGrey1)
+    color: var(--clrWhite);
+    text-shadow: 0 0 3px black;
 }
 
 ul {
@@ -79,13 +80,16 @@ nav {
 .ulNav a {
     padding-left: 25px;
     padding-right: 25px;
+    transition: .2s;
 }
 
 .ulNav a:hover {
-    color: var(--clrWhite);
     text-decoration: underline 2px var(--clrGreen1);
     text-underline-offset: 10px;
+
+    text-shadow: 0 0 20px #fff;
 }
+
 
 @media screen and (max-width: 1200px) {
     .ulNav {
@@ -120,7 +124,46 @@ nav {
 /* MAIN */
 
 main {
-    background-color: blue;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.homeContainer {
+    display: flex;
+    /* gap: 50px; */
+    padding-top: 25vh;
+    align-items: center;
+}
+
+.homeLeft {
+    width: 35%;
+    min-height: 450px;
+    overflow: hidden;
+    border-radius: 50px 0 0 50px;
+    position: relative;
+}
+
+.homeLeft img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto auto;
+    z-index: -1;
+}
+
+.homeRight {
+    background-color: var(--clrGrey2);
+    border-radius: 0 50px 50px 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 65%;
+    min-height: 450px;
+}
+
+.homeRight h1 {
+    margin-bottom: 25px;
 }
 
 .rozciagator {
