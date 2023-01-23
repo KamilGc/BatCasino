@@ -50,8 +50,8 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: saturate(180%) blur(25px);
+    -webkit-backdrop-filter: saturate(180%) blur(25px);
 }
 
 .headerLogo {
