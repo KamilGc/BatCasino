@@ -49,9 +49,9 @@ header {
     /* background-color: var(--clrBlack); */
     position: sticky;
     top: 0;
-    width: 100%;
     backdrop-filter: saturate(180%) blur(25px);
     -webkit-backdrop-filter: saturate(180%) blur(25px);
+    z-index: 1;
 }
 
 .headerLogo {
@@ -78,16 +78,17 @@ nav {
 }
 
 .ulNav a {
-    padding-left: 25px;
-    padding-right: 25px;
-    transition: .2s;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
-.ulNav a:hover {
-    text-decoration: underline 2px var(--clrGreen1);
-    text-underline-offset: 10px;
-
+.ulNav a:hover {    
+    border-bottom: 2px solid var(--clrGreen1);
+    padding-bottom: 7px;
+    border-radius: 10%;
+    
     text-shadow: 0 0 20px #fff;
+    transition: text-shadow .2s, padding-bottom .4s, border-radius .2s;
 }
 
 
