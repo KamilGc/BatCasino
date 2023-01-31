@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red !important;
+    /* outline: 1px solid red !important; */
 }
 
 a {
@@ -39,7 +39,7 @@ body {
     font-weight: 400;
 }
 
-p {
+section p {
     font-weight: 300;
     text-shadow: 0 0 2px #fff;
 }
@@ -459,12 +459,76 @@ main {
 
 /* CONTACT */
 .contactContainer {
+    padding-top: 20vh;
     display: flex;
     justify-content: center;
-    padding-top: 15vh;
 }
 
-/* DELETE AFTER */
-.rozciagator {
-    height: 200vh;
+.contactBox {
+    width: 80%;
+    /* min-height: 400px; */
+}
+
+.contactBox h2 {
+    text-align: center;
+}
+
+.contactForm {
+    background-color: var(--clrGrey3);
+    width: 100%;
+    padding: 2em;
+    border-radius: 2.5em;
+}
+
+.contactForm input, textarea {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-family: 'roboto slab';
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: var(--clrGrey1);
+}
+
+.contactForm input:active, textarea:active, input:focus, textarea:focus {
+    background-color: #fff;
+    outline: none;
+    transition: .2s;
+}
+
+.contactForm input[type=submit] {
+    margin-top: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0.75em;
+    border-radius: 2em;
+    background-color: var(--clrGreen2);
+    border: none;
+    font-family: 'roboto slab';
+    font-weight: 500;
+    text-shadow: 0 0 20px #fff;
+}
+
+.contactForm input[type=submit]:hover {
+    background-color: var(--clrGreen1);
+    transition: .2s;
+}
+
+@media screen and (max-width: 768px) {
+    .contactForm, input, textarea {
+        text-align: center;
+    }
+}
+
+/* FOOTER */
+footer {
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(9, 9, 9);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    font-size: 0.75em;
+    color: var(--clrGrey1);
 }
