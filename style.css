@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red !important; */
+    outline: 1px solid red !important;
 }
 
 a {
@@ -455,6 +455,13 @@ main {
         min-height: 300px;
         text-align: center;
     }
+}
+
+/* CONTACT */
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 15vh;
 }
 
 /* DELETE AFTER */
