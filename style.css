@@ -490,6 +490,10 @@ main {
     background-color: var(--clrGrey1);
 }
 
+.contactForm input::placeholder, textarea::placeholder {
+    color: var(--clrGrey2);
+}
+
 .contactForm input:active, textarea:active, input:focus, textarea:focus {
     background-color: #fff;
     outline: none;
@@ -517,6 +521,12 @@ main {
 @media screen and (max-width: 768px) {
     .contactForm, input, textarea {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contactBox {
+        width: 98%;
     }
 }
 
